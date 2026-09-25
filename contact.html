@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Calgary Handyman</title>
+<meta name="description" content="Get in touch with Calgary Handyman. Call, WhatsApp, or submit an online estimate with photos of your project. we'll get back to you fast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Calgary Handyman logo" class="logo-mark-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i></a>
+          <div class="dropdown">
+            <a href="index.html#services"><i class="fa-solid fa-faucet-drip"></i> Plumbing</a>
+            <a href="index.html#services"><i class="fa-solid fa-paint-roller"></i> Painting</a>
+            <a href="index.html#services"><i class="fa-solid fa-border-all"></i> Floor Installation &amp; Repair</a>
+            <a href="index.html#services"><i class="fa-solid fa-trowel"></i> Drywall Patching &amp; Repair</a>
+            <a href="index.html#services"><i class="fa-solid fa-house-crack"></i> Ceiling Repair &amp; Replacement</a>
+            <a href="index.html#services"><i class="fa-solid fa-bolt"></i> Electrical Repair</a>
+            <a href="index.html#services"><i class="fa-solid fa-vector-square"></i> Glass Services</a>
+            <a href="index.html#services"><i class="fa-solid fa-hammer"></i> Carpentry Repair</a>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html#estimate" class="nav-link active">Online Estimate</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+14036162133" class="btn btn-primary btn-sm"><i class="fa-solid fa-phone"></i> Contact Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= PAGE HERO =============================
+     Uses the Calgary Handyman workshop photo with a green gradient
+     overlay that fades to transparent on the right. To swap the photo,
+     replace assets/hero-contact.jpg with a new file of the same name. = -->
+<section class="site-hero hero-page" style="background-image:url('assets/hero-contact.png');">
+  <div class="container">
+    <div class="eyebrow">We'd Love to Help</div>
+    <h1 class="page-title">Get in Touch</h1>
+    <p>Have a question or need a handyman? Call, WhatsApp, or send us your project details below</p> 
+    <p>we're here to help</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> <span>Contact Us</span></div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT + ESTIMATE ============================= -->
+<section class="section" id="estimate">
+  <div class="container">
+    <div class="contact-wrap">
+
+      <!-- Contact info -->
+      <div class="contact-info-card reveal">
+        <h2>Contact Information</h2>
+        <p>Reach us any way that's convenient — WhatsApp is usually the fastest.</p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="cm-icon"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Call Us</strong><a href="tel:+14036162133">(403) 616-2133</a></div>
+          </div>
+          <div class="contact-method whatsapp">
+            <div class="cm-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div><strong>WhatsApp</strong>
+              <a href="#" data-wa-msg="Hi Calgary Handyman! I have a project I'd like a quote on.">Chat with us instantly</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><strong>Email Us</strong><a href="mailto:info@calgaryhandyman.ca">info@calgaryhandyman.ca</a></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><strong>Location</strong><span class="value">Calgary, Alberta, Canada</span></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon"><i class="fa-regular fa-clock"></i></div>
+            <div><strong>Hours</strong><span class="value">Mon–Sat, 8:00 AM – 6:00 PM</span></div>
+          </div>
+        </div>
+
+        <div class="contact-photo">
+          <img src="assets/calgarycity.jpg" alt="Calgary city">
+        </div>
+
+        <a href="#" data-wa-msg="Hi Calgary Handyman! I have a project I'd like a quote on." class="btn btn-block" style="margin-top:24px; background:#25D366; color:#fff;">
+          <i class="fa-brands fa-whatsapp"></i> Message Us on WhatsApp
+        </a>
+      </div>
+
+      <!-- Estimate form -->
+      <div class="estimate-card reveal">
+        <h2>Online Estimate</h2>
+        <p>Fill out the form below, including photos of the project and we'll get back to you with a free estimate.</p>
+
+        <!--
+          FORM BACKEND NOTE:
+          This form posts to FormSubmit.co, a free form-relay service that emails
+          submissions (including file attachments) straight to your inbox with
+          zero backend code required. Replace the email below with your real
+          address, then submit the form once live to confirm the FormSubmit
+          activation email. Swap the action URL for your own backend/CRM
+          endpoint at any time — the front end will keep working unchanged.
+        -->
+        <form id="estimateForm" action="https://formsubmit.co/info@calgaryhandyman.ca" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Online Estimate Request — Calgary Handyman">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="Full Name" placeholder="Jane Doe" required>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="Email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone Number" placeholder="(403) 555-0123" required>
+            </div>
+            <div class="field">
+              <label for="service">Service Needed *</label>
+              <select id="service" name="Service Needed" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Plumbing</option>
+                <option>Painting</option>
+                <option>Floor Installation &amp; Repair</option>
+                <option>Drywall Patching &amp; Repair</option>
+                <option>Ceiling Repair &amp; Replacement</option>
+                <option>Electrical Repair</option>
+                <option>Glass Services</option>
+                <option>Carpentry Repair</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="Address" placeholder="Street address, Calgary, AB" required>
+          </div>
+
+          <div class="field">
+            <label for="details">Project Details</label>
+            <textarea id="details" name="Project Details" placeholder="Tell us what needs fixing, installing, or repairing…"></textarea>
+          </div>
+
+          <div class="field">
+            <label>Upload Photos of Your Project</label>
+            <div class="upload-zone" id="uploadZone" tabindex="0" role="button" aria-label="Upload project photos">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <strong>Click to upload or drag &amp; drop</strong>
+              <span>JPG, PNG or PDF — up to 6 files, 10MB each</span>
+              <input type="file" id="projectPhotos" name="Project Photos[]" accept="image/*,.pdf" multiple>
+            </div>
+            <div class="upload-previews" id="uploadPreviews"></div>
+            <div class="hint">Photos help us give you a faster, more accurate estimate.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Submit Estimate Request</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map-embed reveal">
+      <iframe
+        src="https://www.google.com/maps?q=Calgary,Alberta,Canada&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Calgary Handyman service area map">
+      </iframe>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section-head reveal" style="margin-top:80px;">
+      <div class="eyebrow">Good to Know</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open reveal">
+        <div class="faq-q">How fast can I get an estimate? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Most estimate requests get a reply the same business day, often within a few hours during working hours.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Do you charge for the estimate itself? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>No. Estimates are completely free and come with no obligation to book.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">What areas do you serve? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>We proudly serve Calgary and the surrounding communities across the Calgary metro area.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Can I just message you on WhatsApp instead? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Absolutely. Tap the WhatsApp button any time to chat directly and send photos on the go.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="assets/logo-light.png" alt="Calgary Handyman logo" class="logo-mark-img">
+    </a>
+      <p>Your trusted partner for reliable handyman services in Calgary and surrounding areas.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" data-wa-msg="Hi Calgary Handyman! I found you online." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html#estimate">Online Estimate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="index.html#services">Plumbing</a></li>
+        <li><a href="index.html#services">Painting</a></li>
+        <li><a href="index.html#services">Flooring</a></li>
+        <li><a href="index.html#services">Drywall &amp; Ceilings</a></li>
+        <li><a href="index.html#services">Electrical &amp; Glass</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul>
+        <li class="fc-item"><i class="fa-solid fa-location-dot"></i> Calgary, Alberta, Canada</li>
+        <li class="fc-item"><i class="fa-solid fa-phone"></i> <a href="tel:+14036162133">(403) 616-2133</a></li>
+        <li class="fc-item"><i class="fa-brands fa-whatsapp"></i> <a href="#" data-wa-msg="Hi Calgary Handyman!">WhatsApp Us</a></li>
+        <li class="fc-item"><i class="fa-solid fa-envelope"></i> info@calgaryhandyman.ca</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span class="current-year">2026</span> Calgary Handyman. All rights reserved.</span>
+    <span><i class="fa-solid fa-leaf"></i> Proudly Canadian</span>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" data-wa-msg="Hi Calgary Handyman! I'd like to get in touch." aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
